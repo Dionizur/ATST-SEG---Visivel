@@ -97,6 +97,7 @@ nav a:hover {
 .dropdown .servicos {
     cursor: pointer;
     font-weight: bold;
+    color: rgb(22, 22, 22);
 }
 
 .dropdown-content {
@@ -125,7 +126,6 @@ nav a:hover {
     background-color: #f1f1f1;
 }
 
-/* Mostrar dropdown ao passar o mouse ou focar */
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content {
     display: block;
@@ -152,19 +152,18 @@ section h2 {
 }
 
 .section-content p {
-    flex-grow: 1;
+    flex: 1;
     font-size: 18px;
 }
 
-/* Imagem NR */
 .imgNR {
     width: 100%;
     max-width: 600px;
     height: auto;
-    margin: 0 auto 20px auto;
     border-radius: 50px;
-    display: block;
     object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Rodapé */
@@ -231,10 +230,6 @@ footer {
 
     nav li {
         margin: 10px 0;
-    }
-
-    .section-content {
-        flex-direction: column;
     }
 
     .imgNR {
