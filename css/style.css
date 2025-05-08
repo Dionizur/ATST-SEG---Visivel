@@ -205,6 +205,49 @@ footer {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
+/*Locação de equipamentos*/
+.equipment-list {
+    margin-top: 40px;
+  }
+
+  .equipment-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .equipment-img {
+    width: 300px;
+    max-width: 100%;
+    margin-right: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .equipment-info {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .equipment-info h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+
+  .equipment-info p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .benefits ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .benefits li {
+    padding: 8px 0;
+  }
 
 /* Responsividade */
 @media (max-width: 768px) {
