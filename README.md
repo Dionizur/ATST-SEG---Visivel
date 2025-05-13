@@ -23,6 +23,7 @@ Clicando no número, o usuário é redirecionado diretamente para uma conversa n
 
 - HTML5
 - CSS3
+- JavaScript
 - Google Fonts (Poppins)
 - Estrutura responsiva
 
