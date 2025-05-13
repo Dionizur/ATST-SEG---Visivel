@@ -205,51 +205,107 @@ footer {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
-/*Locação de equipamentos*/
+
+/* Locação de equipamentos */
 .equipment-list {
     margin-top: 40px;
-  }
+}
 
-  .equipment-item {
+.equipment-item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 40px;
-  }
+}
 
-  .equipment-img {
+.equipment-img {
     width: 300px;
     max-width: 100%;
     margin-right: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .equipment-info {
+.equipment-info {
     flex: 1;
     min-width: 250px;
-  }
+}
 
-  .equipment-info h3 {
+.equipment-info h3 {
     font-size: 1.4em;
     margin-bottom: 10px;
-  }
+}
 
-  .equipment-info p {
+.equipment-info p {
     font-size: 1em;
     line-height: 1.6;
-  }
+}
 
-  .benefits ul {
+.benefits ul {
     list-style: none;
     padding-left: 0;
-  }
+}
 
-  .benefits li {
+.benefits li {
     padding: 8px 0;
-  }
+}
 
-/* Responsividade */
+/* Carrossel da index */
+.carousel-section {
+    padding: 40px 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+    width: 100%;
+    flex-shrink: 0;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Responsividade geral */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -286,6 +342,10 @@ footer {
     .footer-container {
         padding: 1rem;
     }
+
+    .carousel-track img {
+        height: 250px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -309,5 +369,14 @@ footer {
 
     .section-content p {
         font-size: 16px;
+    }
+
+    .carousel-track img {
+        height: 180px;
+    }
+
+    .carousel-btn {
+        font-size: 1.5rem;
+        padding: 8px 12px;
     }
 }
